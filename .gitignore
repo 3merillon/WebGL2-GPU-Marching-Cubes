@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Vite/TypeScript build output
+dist/
+*.tsbuildinfo
+
+# Vite cache
+.vite/
+.cache/
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE files
+.idea/
+*.code-workspace
+
+# Environment files
+.env
+.env.*
+
+# Optional: ignore local config overrides
+vite.config.local.*
+tsconfig.local.*
+
+# MacOS metadata
+._*
+
+# VSCode
+.vscode/
+
+# Coverage
+coverage/

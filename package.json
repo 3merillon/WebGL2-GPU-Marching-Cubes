@@ -1,0 +1,16 @@
+{
+  "name": "immediate-sim-marching-cubes",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vite": "^6.3.5"
+  }
+}

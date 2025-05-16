@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebGL2 GPU Marching Cubes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+</head>
+<body>
+  <div class="performance-dashboard" id="dashboard">
+    <div class="dashboard-header">
+      <h2 class="dashboard-title">WebGL2 GPU Marching Cubes</h2>
+      <button id="dashboardToggle" class="dashboard-toggle" aria-label="Toggle Menu">&#x25B4;</button>
+    </div>
+    <div class="dashboard-content" id="dashboardContent">
+      <div class="metrics-container">
+        <div class="metric-card">
+          <div class="metric-title">FPS</div>
+          <div class="metric-value fps" id="fps">0</div>
+        </div>
+      </div>
+      
+      <div class="settings-section">
+        <div class="settings-title">Marching Cubes / Field Generation</div>
+        <div class="toggle-row">
+          <label class="toggle-label">CPU</label>
+          <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider"></span>
+          </label>
+          <label class="toggle-label">GPU</label>
+        </div>
+        
+        <div class="settings-title">Number of Blobs</div>
+        <div class="blob-settings" id="blobSettings">
+          <button class="setting-button" id="blobSetting0">1</button>
+          <button class="setting-button active" id="blobSetting1">10</button>
+          <button class="setting-button" id="blobSetting2">50</button>
+          <button class="setting-button" id="blobSetting3">100</button>
+        </div>
+
+        <div class="resolution-settings" id="resolutionSettings">
+          <button class="setting-button" id="resSetting0">16³</button>
+          <button class="setting-button active" id="resSetting1">32³</button>
+          <button class="setting-button" id="resSetting2">64³</button>
+          <button class="setting-button" id="resSetting3">128³</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <canvas id="render_area"></canvas>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
